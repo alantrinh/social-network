@@ -1,0 +1,290 @@
+body {
+    background-color: rgb(113, 182, 232);
+    height: 100%;
+}
+
+main {
+    text-align: center;
+    font-family: helvetica, sans-serif;
+    height: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    border-bottom: 1px solid white;
+    max-height: 77px;
+}
+
+header > ul {
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+header > ul > li {
+    display: inline;
+    padding: 0px 5px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+header > ul > li > a:hover {
+    color: grey;
+}
+
+header h3 {
+    letter-spacing: 0.25em;
+    font-weight: lighter;
+    /*align-content: center;*/
+}
+
+.user-list {
+    align-self:flex-start;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.user-list ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+.user-list ul li {
+    display: block;
+}
+
+.user-list ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.user-list ul li a:hover {
+    color: grey;
+}
+
+.error {
+    color: red;
+}
+
+.logo-small {
+    height: 75px;
+    width: 75px;
+    float: left;
+    border: 1px dotted white;
+}
+
+.profile-image {
+    height: 75px;
+    width: 75px;
+    float: right;
+    border: 1px dotted white;
+}
+
+.profile-image:hover {
+    cursor: pointer;
+}
+
+.profile-image-upload {
+    background-color: white;
+    z-index: 1;
+    padding: 5px;
+    margin: 5px 0px;
+    border-radius: 5px;
+    position: fixed;
+    right: 8px;
+    display: inline-block;
+}
+
+.profile-image-upload ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    text-align: right;
+}
+
+.profile-image-upload ul li:hover, label[for="profile-image-input"]:hover{
+    color: grey;
+    cursor: pointer;
+}
+
+.profile-image-upload h3 {
+    margin-top: 0px;
+}
+
+#profile-image-input {
+    transform: translateX(-2000px);
+    height: 1px;
+    width: 1px;
+}
+
+/*label[for="profile-image-input"] {
+    cursor: pointer;
+    background-color: rgb(113, 182, 232);
+    padding: 5px;
+    border-radius: 5px;
+}*/
+
+/*#profile-image-delete-button {
+    cursor: pointer;
+    background-color: rgb(113, 182, 232);
+    padding: 5px;
+    border-radius: 5px;
+}*/
+
+#profile-wrapper {
+    padding: 5px;
+    text-align: center;
+}
+
+#profile-contents {
+    display: flex;
+    justify-content: center;
+}
+
+#profile-contents a {
+    display: block;
+}
+
+/*#logout-button {
+    cursor: pointer;
+    background-color: rgb(113, 182, 232);
+    padding: 5px;
+    border-radius: 5px;
+}*/
+
+.friend-button {
+    border: 1px dotted white;
+    border-radius: 5px;
+    display: block;
+    padding: 5px;
+}
+
+.bio-profile {
+    display: inline-block;
+    border: 1px dotted white;
+    padding: 5px;
+    width: 245px;
+    font-weight: normal;
+}
+
+.bio-profile-image {
+    height: 250px;
+    width: 250px;
+}
+
+#bioInput {
+    height: 150px;
+    width:  300px;
+}
+
+.profile {
+    padding: 5px;
+    width: 257px;
+}
+
+#friends-wrapper {
+    display:inline-block;
+    padding-top: 10px;
+}
+
+#friends-wrapper img {
+    height: 100px;
+    width: 100px;
+}
+
+.friend-request {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted white;
+}
+
+.friend-request-sent {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted white;
+}
+
+.friend {
+    margin: 5px;
+    padding: 5px;
+    border: 1px dotted white;
+}
+
+.online-user img {
+    height: 100px;
+    width: 100px;
+}
+
+#search-bar {
+    border: 1px dotted white;
+    background-color: rgb(113, 182, 232);
+    height: 24px;
+    width: 100%;
+    padding: 0px 5px;
+}
+
+#search-bar::placeholder {
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+.search-result img {
+    height: 100px;
+    width: 100px;
+}
+
+#chat-input {
+    width: 500px;
+}
+
+#chat-input::placeholder {
+    font-style: italic;
+    text-align: center;
+    color: black;
+}
+
+#chat-wrapper {
+    border: 1px dotted white;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.chat-message-wrapper {
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.chat-message-wrapper img {
+    height: 100px;
+    width: 100px;
+}
+
+.chat-message {
+    padding-left: 5px;
+    width: 400px;
+    text-align: left;
+}
+
+.chat-name {
+    font-weight: bold;
+}
+
+.chat-date {
+    font-style: italic;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
