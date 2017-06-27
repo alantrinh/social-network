@@ -6,7 +6,8 @@ export default class Profile extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showBioEditor: false
+            showBioEditor: false,
+            bio: this.props.bio
         };
 
         this.handleChange = this.handleChange.bind(this);
@@ -26,7 +27,7 @@ export default class Profile extends React.Component {
 
     updateBio(e) {
         e.preventDefault();
-        const bio = this.state.bio;
+        const bio = this.state.bio ? this.state.bio : this.props.bio;
         axios.post('/bio', {
             bio
         }).then((resp) => {
